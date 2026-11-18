@@ -18,6 +18,8 @@ triUmp <-read.csv(file="triUmpsal.csv",header=TRUE)
 
 A new  preventative aides drug (triUmpsal) is under test in clinical trials. Consider only the females, does this drug seem effective?  Hint - use dplyr to obtain that subpopulation with the filter command.
 
+The question is whether the drug triUmpsal appears to make a difference when compared with a placebo.Focusing mainly on females data set and comparing the infection outcomes of those who received triUmpsal
+
 $H_0$ there is No, relationship in AIDS rates between the triump drug and placebo in females.  
 $H_A$ There is a relationship in AIDS rates between the drug triump and placebo in females.  
 
@@ -31,11 +33,13 @@ names(femaleData)
 table(femaleData$treatment)
 ```
 
-# Methods   
+# Methods  
 
-Categorical- Not infected.  
+we use two categorical variables. Treatment identifies whether female participants received triUmpsal or a placebo. infection status identifies whether participants became infected with AIDS or remained uninfected.  
 
-categorical- infected.  
+Categorical-treatment  
+
+categorical- infection status.  
 
 <!--Decide on your methods:  use "variable analysis" or other appropriate descriptors.  Make sure to choose at least one graphical method and at least one numerical method. Discuss what data manipulations may be needed for example subsetting or other binning procedures and what sort of graphical displays and inferential tools will be used!-->
 
@@ -48,14 +52,24 @@ categorical- infected.
 ### Graphical Descriptive Results
 
 ```{r}
-barchartGC(~gender+ treatment,data=triUmp)
-barchartGC(~gender + treatment,data=triUmp, type="percent")
+barchartGC(~treatment+ infected, data=femaleData)
+barchartGC(~treatment + infected, data=femaleData, type="percent")
 
 ```
 
 <!--Graphical results here.  Make sure to show your code.  Provide appropriate labels for axes, giving units if possible, and provide a good title for the graph, too.  Use the graphical results to describe the patterns if any that exist in the data as focused toward the research question. Bottom line is to explain the features of the graph that are relevant to conforming or departing to what is expected by your null hypothesis !-->
 
 ### Numerical Descriptive Results
+
+```{r}
+table1 <- xtabs(~treatment + infected, data=femaleData)
+
+rowPerc(table1)
+colPerc(table1)
+
+table1
+```
+
 
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
 
