@@ -57,7 +57,7 @@ barchartGC(~treatment + infected, data=femaleData, type="percent")
 
 ```
 
-The blue is females who received the drug. The peach is females who received the placebo. categories aids and none are infected and not infected participants.  
+The first bar graph illustrates the frequency of infected and uninfected female participants from the drug and placebo groups. The graph demonstrates that 210 females who received triUmpsal became infected, compared to 147 females who received the placebo.However, because the two treatment groups contain different number of participants the % graph provides stronger data.The second graph shows that 3.69% of females in the drug group became infected, compared to 2.42% in the placebo group. showing that the % of infected participants was higher among those who received triUmpsal.
 
 
 <!--Graphical results here.  Make sure to show your code.  Provide appropriate labels for axes, giving units if possible, and provide a good title for the graph, too.  Use the graphical results to describe the patterns if any that exist in the data as focused toward the research question. Bottom line is to explain the features of the graph that are relevant to conforming or departing to what is expected by your null hypothesis !-->
