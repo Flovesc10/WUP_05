@@ -43,10 +43,7 @@ categorical- infection status.
 
 <!--Decide on your methods:  use "variable analysis" or other appropriate descriptors.  Make sure to choose at least one graphical method and at least one numerical method. Discuss what data manipulations may be needed for example subsetting or other binning procedures and what sort of graphical displays and inferential tools will be used!-->
 
-# Results
-
-<!--Divide this section into two sub-sections:  One for your descriptive  results and one for your inferential results.!-->
-
+# Results  
 ## Descriptive Results
 
 ### Graphical Descriptive Results
@@ -73,6 +70,7 @@ colPerc(table1)
 table1
 ```
 
+The numerical results demonstrate a difference in infection outcomes between female participants who received triUmpsal and those who received the placebo. out of the 6,074 females who received the placebo, 147 became infected, representing 2.42% of the group. Additionally, 96.31% of females in the group remained uninfected, compared to 97.58% in the placebo group. showing that the drug group had a higher infection rate than the placebo group.  
 
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
 
