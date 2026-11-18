@@ -18,10 +18,10 @@ triUmp <-read.csv(file="triUmpsal.csv",header=TRUE)
 
 A new  preventative aides drug (triUmpsal) is under test in clinical trials. Consider only the females, does this drug seem effective?  Hint - use dplyr to obtain that subpopulation with the filter command.
 
-The question is whether the drug triUmpsal appears to make a difference when compared with a placebo.Focusing mainly on females data set and comparing the infection outcomes of those who received triUmpsal
+The question is whether the drug triUmpsal appears to make a difference when compared with a placebo.Focusing mainly on female participants in the clinical trial. By comparing the infection outcomes of females who received triUmpsal with those who received a placebo.to find out if the relationships between the treatment received and the likelihood of becoming infected. And to determine if the data provides evidence that triUmpsal may be an effective preventative treatment for females.
 
-$H_0$ there is No, relationship in AIDS rates between the triump drug and placebo in females.  
-$H_A$ There is a relationship in AIDS rates between the drug triump and placebo in females.  
+$H_0$ there is No, relationship between treatment either triumpsal or placebo and infection satus among female participants.  
+$H_A$ There is a relationship between treatment either triUmpsal or placebo and infection status among females participants.  
 
 
 ```{r}
@@ -56,6 +56,9 @@ barchartGC(~treatment+ infected, data=femaleData)
 barchartGC(~treatment + infected, data=femaleData, type="percent")
 
 ```
+
+The blue is females who received the drug. The peach is females who received the placebo. categories aids and none are infected and not infected participants.  
+
 
 <!--Graphical results here.  Make sure to show your code.  Provide appropriate labels for axes, giving units if possible, and provide a good title for the graph, too.  Use the graphical results to describe the patterns if any that exist in the data as focused toward the research question. Bottom line is to explain the features of the graph that are relevant to conforming or departing to what is expected by your null hypothesis !-->
 
