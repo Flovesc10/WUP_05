@@ -21,6 +21,16 @@ A new  preventative aides drug (triUmpsal) is under test in clinical trials. Con
 $H_0$ there is No, relationship in AIDS rates between the triump drug and placebo in females.  
 $H_A$ There is a relationship in AIDS rates between the drug triump and placebo in females.  
 
+
+```{r}
+femaleData <- triUmp %>%
+  filter(gender == "F")
+
+names(femaleData)
+
+table(femaleData$treatment)
+```
+
 # Methods   
 
 Categorical- Not infected.  
