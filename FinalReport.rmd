@@ -36,9 +36,10 @@ categorical- infected.
 ## Descriptive Results
 
 ### Graphical Descriptive Results
+
 ```{r}
-barchartGC(~ + Sex,data=ucdavis1)
-barchartGC(~class + Sex,data=ucdavis1, type="percent")
+barchartGC(~gender+ treatment,data=triUmp)
+barchartGC(~gender + treatment,data=triUmp, type="percent")
 
 ```
 
