@@ -1,7 +1,7 @@
 ---
 title: "Aides Drug"
 author: "Cristal Hernandez"
-date: "put the date here"
+date: "11/18/2026"
 output: html_document
 ---
 
@@ -70,11 +70,21 @@ colPerc(table1)
 table1
 ```
 
-The numerical results demonstrate a difference in infection outcomes between female participants who received triUmpsal and those who received the placebo. out of the 6,074 females who received the placebo, 147 became infected, representing 2.42% of the group. Additionally, 96.31% of females in the group remained uninfected, compared to 97.58% in the placebo group. showing that the drug group had a higher infection rate than the placebo group.  
+The numerical results demonstrate a difference in infection outcomes between female participants who received triUmpsal and those who received the placebo. from the 5,694 females who received the drug, 210 became infected,representing 3.69% of the group. Compared to, the 6,074 females who received the placebo, 147 became infected, representing 2.42% of the group. Additionally, 96.31% of females in the group remained uninfected, compared to 97.58% in the placebo group. showing that the drug group had a higher infection rate than the placebo group.  
 
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
 
-## Inferential Results
+## Inferential Results  
+
+```{r}
+chisq.test(table1)
+
+chisqtestGC(table1)
+
+fisher.test(table1)
+```
+
+The inferential result findings conclude that all three P values are below 0.05 meaning we reject the $H_0$. There is statistically substantial evidence of a relationship between the treatment group and infection status among female participants. suggesting that triUmpsal did not show the expected preventative effect among female participants in this data set.  
 
 <!--State hypothesis clearly.  Make sure your discussion of the inferential test covers all the aspects that the test output produces, such as test statistic, p-value etc.  Make a decision about the null hypothesis, explain the assumptions on which the selected test/procedure was based, and why the chosen procedure satisfys the assumptions and is appropriate to answer the research question!-->
 
