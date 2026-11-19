@@ -89,6 +89,7 @@ The inferential result findings conclude that all three P values are below 0.05 
 <!--State hypothesis clearly.  Make sure your discussion of the inferential test covers all the aspects that the test output produces, such as test statistic, p-value etc.  Make a decision about the null hypothesis, explain the assumptions on which the selected test/procedure was based, and why the chosen procedure satisfys the assumptions and is appropriate to answer the research question!-->
 
 
-# Discussion and Conclusion
+# Discussion and Conclusion  
+The results of this study do not support the expectation that triUmpasl prevents HIV infection among female participants. Both the graphical and numerical results show a higher % of infections among females who received the drug compared to those who received the placebo. Specifically, 3.69% of females in the drug group became infected, compared to 2.42% in the placebo group. The inferential results of 0.05  further show that this difference was statistically significant, resulting in us rejecting the null hypothesis. In conclusion the study suggest that triUmpsal was not effective at preventing HIV infection among the female participants in this study. the participants who received the drug had a higher infection rate than those who received the placebo.
 
 <!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
